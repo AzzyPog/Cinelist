@@ -6,10 +6,10 @@
     color: #ffff;
 }
 
+
 body{
     background: radial-gradient(46.24% 46.24% at 50% 50%, #2E2828 0%, rgba(26, 24, 24, 0.91) 100%);
-    background-repeat: no-repeat;
-    height: 100vh;
+
 }   
 
 .cinelist-header{
@@ -18,6 +18,7 @@ body{
     background: linear-gradient(90deg, #D60000 49.24%, #F40000 83.87%, #FF0505 99.99%, #FF0000 100%);
     box-shadow: 0px 4px 4px #FF1616;
     background-repeat: no-repeat;
+    background-size: 100vw;
     width: 100vw;
     justify-content: space-between;
 }
@@ -33,6 +34,7 @@ body{
     font-weight: 600;
     align-items: center;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .cinelist-input-holder{
@@ -49,19 +51,34 @@ body{
     color: #000000;
 }
 
-.cinelist-nav-holder{
-
-} 
 
 .cinelist-nav-items{
     text-decoration: none;
     font-weight: bold;
     margin: 0 30px;
     cursor: pointer;
+    transition: 0.6s all;
 }
 
 .cinelist-nav-items:last-child{
     border: 2px solid #ffff;
     border-radius: 10px;
     padding: 10px;
+}
+
+.cinelist-nav-items:last-child:hover{
+    background-color: #ffff;
+    border-style:outset;
+    border-color: #f70000a2;
+}
+
+.cinelist-nav-items:hover{
+    color: #000000;
+}
+
+.cinelist-film-post{
+    background-color: #FF1616;
+    width: calc(100% - 3.5rem);
+    height: 200px;
+    margin: 8rem 0 0 1.5rem;
 }
