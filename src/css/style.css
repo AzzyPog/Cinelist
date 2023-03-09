@@ -1,18 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #ffff;
+    scroll-behavior: smooth;
 }
 
 
-body{
+body {
     background: radial-gradient(46.24% 46.24% at 50% 50%, #2E2828 0%, rgba(26, 24, 24, 0.91) 100%);
+    height: 100vh;
 
-}   
+}
 
-.cinelist-header{
+h1{
+    font-size: 32px;
+}
+
+.cinelist-header {
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, #D60000 49.24%, #F40000 83.87%, #FF0505 99.99%, #FF0000 100%);
@@ -23,12 +29,12 @@ body{
     justify-content: space-between;
 }
 
-.cinelist-logoname-input-holder{
+.cinelist-logoname-input-holder {
     display: flex;
     align-items: center;
 }
 
-.cinelist-logo-name{
+.cinelist-logo-name {
     display: flex;
     font-size: 40px;
     font-weight: 600;
@@ -37,12 +43,12 @@ body{
     cursor: pointer;
 }
 
-.cinelist-input-holder{
+.cinelist-input-holder {
     margin: 0 0 0 3rem;
 
 }
 
-.cinelist-input{
+.cinelist-input {
     padding: 10px;
     padding-right: 25px;
     border-radius: 10px;
@@ -52,7 +58,7 @@ body{
 }
 
 
-.cinelist-nav-items{
+.cinelist-nav-items {
     text-decoration: none;
     font-weight: bold;
     margin: 0 30px;
@@ -60,25 +66,108 @@ body{
     transition: 0.6s all;
 }
 
-.cinelist-nav-items:last-child{
+.cinelist-nav-items:last-child {
     border: 2px solid #ffff;
     border-radius: 10px;
     padding: 10px;
 }
 
-.cinelist-nav-items:last-child:hover{
+.cinelist-nav-items:last-child:hover {
     background-color: #ffff;
-    border-style:outset;
+    border-style: outset;
     border-color: #f70000a2;
 }
 
-.cinelist-nav-items:hover{
+.cinelist-nav-items:hover {
     color: #000000;
 }
 
-.cinelist-film-post{
-    background-color: #FF1616;
+.cinelist-film-post {
+    display: flex;
+    background: linear-gradient(96.44deg, #353333 3.24%, #302e2e 3.24%, #463d3f 52.66%);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
     width: calc(100% - 3.5rem);
-    height: 200px;
+    height: 250px;
     margin: 8rem 0 0 1.5rem;
 }
+
+.cinelist-date-rating-holder{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cinelist-date-rating-holder div{
+    display: flex;
+    align-items: center;
+}
+
+.cinelist-name-date-rating-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.cinelist-film-img{
+    margin: 10px;
+    margin-right: 30px;
+    width: 12rem;
+    height: 14.4rem;
+    border-radius: 15px 0 0 15px;
+}
+
+.cinelist-film-description{
+    font-size: 17px;
+    width: 75%;
+    height: 120px;
+    overflow: auto;
+}
+
+.cinelist-date-rating-holder span:first-child{
+    font-weight: normal;
+}
+
+.cinelist-film-name{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.cinelist-film-rating{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 5px;
+    background-color: none;
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* scroll bar style */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
